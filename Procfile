@@ -1,1 +1,1 @@
-web: gunicorn portfolio.wsgi
+web: waitress-serve --listen=*:8000 portfolio.wsgi:application
